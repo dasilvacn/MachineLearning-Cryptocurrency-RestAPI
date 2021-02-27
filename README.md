@@ -1,5 +1,5 @@
 # MachineLearning-Cryptocurrency-RestAPI
-Geçmiş kripto verilerinden bir ML modeli oluşturma ve tahmin verilerini RestAPI ile gösterme.
+Geçmiş kripto verilerinden bir ML modeli oluşturma ve tahmin verilerini RestAPI ile temsil etme.
 
 ![img1](https://user-images.githubusercontent.com/56341239/109386509-1b542580-790c-11eb-9a80-53aacd1cf200.PNG)
 
