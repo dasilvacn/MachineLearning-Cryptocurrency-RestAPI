@@ -1,0 +1,8 @@
+Sklearn
+Flask
+flask_restful
+python-binance
+pickle
+numpy
+pandas
+json
