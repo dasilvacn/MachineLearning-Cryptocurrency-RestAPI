@@ -42,7 +42,13 @@ class Crypto(Resource):
                 df_predict[i] = list_pred
             model = pickle.load(open("MLBinanceAPI/"+ name, 'rb'))
             result = model.predict(df_predict)[0]
-            dict_result.update({name : result})
+            name_last_value = client.get_klines(symbol=name, interval="1h", limit=2)
+            dict_result.update({
+                name + " 1 SAATLIK MUM ACILISI" : round(float(name_last_value[1][1]), 3),
+                name + " ANLIK DEGER" : round(float(name_last_value[1][4]), 3),
+               # "Interval": "1 hour",
+                name + " 1 SAATLIK MUM KAPANIS TAHMINI" : round(result, 3)
+            })
             return dict_result
         else:
             return {name : "NULL"}
